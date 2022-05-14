@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Srez.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Логин"/>
+                <Frame BorderColor="Black" Padding="0">
+                    <Entry/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Пароль"/>
+                <Frame BorderColor="Black" Padding="0">
+                    <Entry IsPassword="True"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Text="Не зарегестрированы?" BackgroundColor="Transparent" Clicked="BtnSignUpClicked"/>
+            <Button Text="Войти" Clicked="BtnLoginClicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
